@@ -5,7 +5,9 @@
 3. Download and install [Heroku Cli](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
 4. Commit all the changes locally and change directory to the working directory.  
 5. Enter ``heroku login`` in terminal and enter your heroku's username and password.  
-6. Set Heroku Remote - ``heroku git:remote -a [remote-branch-of-heroku]``.  
+6. a. Create a Heroku App using ``heroku create`` and copy the app name that is the remote branch of heroku.
+6. b. Add Heroku Remote - ``heroku git:remote -a [remote-branch-of-heroku]``.  
 7. ``git add .`` - Add all files.
 8. ``git commit -m "Deployment First Commit"``
 9. ``git push heroku master`` - Push to the heroku repository. And wait for it to finish deployment.
+10. Enter ``heroku open`` to open the app.

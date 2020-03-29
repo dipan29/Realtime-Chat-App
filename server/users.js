@@ -10,7 +10,7 @@ const addUser = ({ id, name, room }) => {
   if(existingUser) return { error: 'Username is already taken.' };
 
   const user = { id, name, room };
-
+  console.log(name + ' has joined Chat Room - #' + room);
   users.push(user);
 
   return { user };
