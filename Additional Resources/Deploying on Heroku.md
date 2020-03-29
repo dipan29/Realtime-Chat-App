@@ -1,4 +1,4 @@
-# Steps to Deploy your App on Heroku
+# Steps to Deploy your Express Backend on Heroku
   
 1. Make an account on [Heroku](https://www.heroku.com/).  
 2. Create a new app. Give it an App Name and choose any region you want. Make sure you stay on the hobby or free tier.

@@ -22,7 +22,7 @@ html, body {
 }
 
 .joinInnerContainer {
-  width: 20%;
+  width: 30%;
 }
 
 .joinInput {
@@ -68,15 +68,26 @@ html, body {
   vertical-align: center;
 }
 
+.on-mobile {
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .joinOuterContainer {
-    height: 100%;
+    height: 90vh;
+  }
+
+  .footer {
+    height: 10vh;
   }
 
   .joinInnerContainer {
     width: 90%;
   }
-
+  
+  .on-mobile {
+    display: inline-block;
+  }
 
 }
 

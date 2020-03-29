@@ -24,7 +24,7 @@ export default function SignIn() {
         </div>
       </div>
       <div className="footer text-center">
-        <p>Crafted with &hearts; using React, Express and Socket.IO | Dipan Roy</p>
+        <p>Crafted with &hearts; using React, Express <br className="on-mobile" /> and Socket.IO | Dipan Roy</p>
       </div>
     </div>
   );
