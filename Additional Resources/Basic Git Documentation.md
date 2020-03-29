@@ -8,7 +8,8 @@
 ## Cloning this Repository
 The first thing you should know to keep a local copy of a GitHub repository to work on and transfer changes to the git repository.  
 To clone any repository, open a terminal in the desired folder where you want to clone it and Enter -  
-``git clone https://github.com/dipan29/Realtime-Chat-App.git``. Make sure you enter .git at the end of the URL to clone it to a generated folder.  
+``git clone https://github.com/dipan29/Realtime-Chat-App.git``.  
+Make sure you enter .git at the end of the URL to clone it to a generated folder.  
 
 ## Important Git Commands
 1. ``git pull`` - This allows you to fetch all the changes that are there in the GitHub Repository but not on your local machine.  
@@ -24,7 +25,7 @@ These command are for basic introduction to Git and doesn't specify any document
 **Branch** - A branch is essentially is a unique set of code changes with a unique name. Each repository can have one or more branches.  
 **Remote** - A remote in Git is a common repository that all team members use to exchange their changes. In most cases, such a remote repository is stored on a code hosting service like GitHub or on an internal server.
 **Origin** - In Git, "origin" is a shorthand name for the remote repository that a project was originally cloned from.  
-**Master** - This is the default branch of any github repository.
+**Master** - This is the default branch of any github repository.  
 **gh-pages** - You can create a branch named ``gh-pages`` which can help you act as a mini deployment server for your Web Apps. This makes a URL under your repository that enlists all the files under the branch gh-pages like a simple web server.  
 
 
