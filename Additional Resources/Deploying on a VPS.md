@@ -33,11 +33,11 @@ Use [PuttySSH](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) t
 
 ### Creating the NGINX Configuration File
 1. Enter ``sudo nano /etc/nginx/sites-available/example.com`` and write the following to the file.   
-    server {
-        listen 80;
-        server_name example.com www.example.com;
-        root /var/www/example.com/public_html;
-        index index.html;
+    server {  
+        listen 80;  
+        server_name example.com www.example.com;  
+        root /var/www/example.com/public_html;  
+        index index.html;  
     }  
 2. Save the file and then enter ``sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/`` to create a symbolic link.
 3. Restart the NGINX Server using ``sudo systemctl restart nginx``.
@@ -64,20 +64,20 @@ Use [PuttySSH](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) t
 5. ``pm2 info app_name`` - Only show the details of the specific application/process.  
   
 ## Setting Up the API Subdomain for easy access
-1.  Enter ``sudo nano /etc/nginx/sites-available/api.example.com`` and write the following to the file.
-    server {
-    listen 80;
-    server_name api.example.com;
-
-    location / {
-        proxy_pass http://localhost:5000;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-}
+1.  Enter ``sudo nano /etc/nginx/sites-available/api.example.com`` and write the following to the file.  
+    server {  
+    listen 80;  
+    server_name api.example.com;  
+  
+    location / {  
+        proxy_pass http://localhost:5000;  
+        proxy_http_version 1.1;  
+        proxy_set_header Upgrade $http_upgrade;  
+        proxy_set_header Connection 'upgrade';  
+        proxy_set_header Host $host;  
+        proxy_cache_bypass $http_upgrade;  
+    }  
+}  
 2. Save the file and then enter ``sudo ln -s /etc/nginx/sites-available/api.example.com /etc/nginx/sites-enabled/`` to create a symbolic link.
 3. Test the NGINX Configuration by entering ``sudo nginx -t`` and if it resolves to OK, then go on to the next, else fix the errors.
 4. Restart NGINX ``sudo systemctl restart nginx``.
