@@ -33,12 +33,14 @@ Use [PuttySSH](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) t
 
 ### Creating the NGINX Configuration File
 1. Enter ``sudo nano /etc/nginx/sites-available/example.com`` and write the following to the file.   
+<pre>
     server {  
         listen 80;  
         server_name example.com www.example.com;  
         root /var/www/example.com/public_html;  
         index index.html;  
     }  
+</pre>
 2. Save the file and then enter ``sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/`` to create a symbolic link.
 3. Restart the NGINX Server using ``sudo systemctl restart nginx``.
 4. Verify by entering the domain name, if pointed already*.
@@ -65,7 +67,8 @@ Use [PuttySSH](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) t
   
 ## Setting Up the API Subdomain for easy access
 1.  Enter ``sudo nano /etc/nginx/sites-available/api.example.com`` and write the following to the file.  
-    server {  
+<pre>
+server {  
     listen 80;  
     server_name api.example.com;  
   
@@ -78,6 +81,7 @@ Use [PuttySSH](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) t
         proxy_cache_bypass $http_upgrade;  
     }  
 }  
+</pre>
 2. Save the file and then enter ``sudo ln -s /etc/nginx/sites-available/api.example.com /etc/nginx/sites-enabled/`` to create a symbolic link.
 3. Test the NGINX Configuration by entering ``sudo nginx -t`` and if it resolves to OK, then go on to the next, else fix the errors.
 4. Restart NGINX ``sudo systemctl restart nginx``.
