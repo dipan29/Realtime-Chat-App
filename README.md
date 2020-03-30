@@ -1,5 +1,5 @@
 # Real Time Chat Application
-This is a code repository for the corresponding webinar. 
+This is a code repository for the corresponding webinar dated 30th March 2020. 
 
 ### 
   

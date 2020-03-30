@@ -7,7 +7,9 @@
 5. Enter ``heroku login`` in terminal and enter your heroku's username and password.  
 6. a. Create a Heroku App using ``heroku create`` and copy the app name that is the remote branch of heroku.
 6. b. Add Heroku Remote - ``heroku git:remote -a [remote-branch-of-heroku]``.  
-7. ``git add .`` - Add all files.
-8. ``git commit -m "Deployment First Commit"``
-9. ``git push heroku master`` - Push to the heroku repository. And wait for it to finish deployment.
-10. Enter ``heroku open`` to open the app.
+7. Create a **Procfile** with the following content - ``web: node index.js`` or the specific file that is the entry point of the api endpoint.  
+8. Save the file in the index directory, this makes allows heoroku to understand the deployment main route and makes it easier as all the deoployment is handled by heroku itself.  
+9. ``git add .`` - Add all files.
+10. ``git commit -m "Deployment First Commit"``
+11. ``git push heroku master`` - Push to the heroku repository. And wait for it to finish deployment.
+12. Enter ``heroku open`` to open the app.
