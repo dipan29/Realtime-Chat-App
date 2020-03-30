@@ -32,7 +32,7 @@ Use [PuttySSH](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) t
 4. ``chmod 0755  /var/www`` enables NGINX to access the contents of the folder.  
 
 ### Creating the NGINX Configuration File
-1. Enter ``sudo nano /etc/nginx/sites-available/example.com`` and write the following to the file.   
+1. Enter ``sudo nano /etc/nginx/sites-available/example.com.conf`` and write the following to the file.   
 <pre>
     server {  
         listen 80;  
@@ -41,7 +41,7 @@ Use [PuttySSH](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) t
         index index.html;  
     }  
 </pre>
-2. Save the file and then enter ``sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/`` to create a symbolic link.
+2. Save the file and then enter ``sudo ln -s /etc/nginx/sites-available/example.com.conf /etc/nginx/sites-enabled/`` to create a symbolic link.
 3. Restart the NGINX Server using ``sudo systemctl restart nginx``.
 4. Verify by entering the domain name, if pointed already*.
 
@@ -66,7 +66,7 @@ Use [PuttySSH](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) t
 5. ``pm2 info app_name`` - Only show the details of the specific application/process.  
   
 ## Setting Up the API Subdomain for easy access
-1.  Enter ``sudo nano /etc/nginx/sites-available/api.example.com`` and write the following to the file.  
+1.  Enter ``sudo nano /etc/nginx/sites-available/api.example.com.conf`` and write the following to the file.  
 <pre>
 server {  
     listen 80;  
