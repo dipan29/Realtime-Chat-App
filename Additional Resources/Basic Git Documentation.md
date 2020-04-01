@@ -2,9 +2,9 @@
 
 ## Contents
 - [Installing Git and Linking your GitHub Account](Installing-Git-and-Linking-your-GitHub-Account)
-- [Cloning this Repository](Cloning-this-Repository)
-- [Important Git Commands](Important-Git-Commands)
-- [Some Additional Terms](Some-Additional-Terms)
+- [Cloning this Repository](#Cloning-this-Repository)
+- [Important Git Commands](#Important-Git-Commands)
+- [Some Additional Terms](#Some-Additional-Terms)
 
 ## Installing Git and Linking your GitHub Account
 1. You can download [Git](https://git-scm.com/downloads) or use [GitHub Desktop](https://desktop.github.com/). The later has a simple interface to get started with for beginners.  
