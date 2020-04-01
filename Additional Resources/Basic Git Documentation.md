@@ -1,7 +1,7 @@
 # Getting Started with GitHub & This Repository
 
 ## Contents
-- [Installing Git and Linking your GitHub Account](Installing-Git-and-Linking-your-GitHub-Account)
+- [Installing Git and Linking your GitHub Account](#Installing-Git-and-Linking-your-GitHub-Account)
 - [Cloning this Repository](#Cloning-this-Repository)
 - [Important Git Commands](#Important-Git-Commands)
 - [Some Additional Terms](#Some-Additional-Terms)
