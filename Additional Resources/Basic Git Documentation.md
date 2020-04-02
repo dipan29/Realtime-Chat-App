@@ -30,8 +30,9 @@ Make sure you enter .git at the end of the URL to clone it to a generated folder
 10. ``git merge [sourcebranch] [targetbranch]`` - This merges a specified branch into the target branch.
 11. ``git remote -v`` - This lists your existing remotes.
 12. ``git remote set-url origin https://github.com/...(link to new repository)`` - This changes your remote's existing URL to a new URL.
-12. b. ``git remote add origin [repo-link.git]`` - Sets the remote branch for a newly created local repository.
-13. ``git rm -r [file-name.txt] `` - This removes a file (or folder) 
+13. ``git remote add origin [repo-link.git]`` - Sets the remote branch for a newly created local repository.
+14. ``git rm -r [file-name.txt] `` - This removes a file (or folder) 
+15. ``git push origin gh-pages`` - Pushes all the working files to gh-pages branch to host the site.
 
 These command are for basic introduction to Git and doesn't specify any documentation to use GitHub.
 
