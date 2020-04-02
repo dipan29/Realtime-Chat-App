@@ -37,11 +37,17 @@ These command are for basic introduction to Git and doesn't specify any document
 ## Some Additional Terms and a detailed description
 
 **Remote** - A remote in Git is a common repository that all team members use to exchange their changes. In most cases, such a remote repository is stored on a code hosting service like GitHub or on an internal server.
+
 **Origin** - In Git, "origin" is a shorthand name for the remote repository that a project was originally cloned from.  
+
 **pull request** - This is one of the first steps you need to learn for Open Source Contribution. It is basically informing the owner of the repository on whose project you are working upon(the forked repository), the changes you made to his/her code. A pull request is done by the button named pull request. The owner can see your changes via the pull request created to his/her repository by you and can review the changes. If the owner accept your changes, it is termed as a "merged pull request". The pull requests are often made to the master branch of the main repository from a different branch (except master) of your repository.(The forked one in your profile).
+
 **Master** - This is the default branch of any github repository.
+
 **Branch** - A branch is essentially a unique set of code changes with a unique name. Each repository can have one or more branches. Branches are very inportant specially when it comes to making pull requests in forked repositories. In case of forked repository, its master branch remains in sync with the master branch of the original, while you make your changes by creating another branch, which is later used to send the pull request.
+
 **Merge** - It is merging the changes made by other branches or pull requests with the master branch(or the original code).
+
 **Merge Conflict** - A merge conflict arises when two separate branches have made edits to the same line in a file, or when a file has been deleted in one branch but edited in the other. Conflicts will most likely happen when working in a team environment or Open Source Projects and competitions(like Hacktoberfest, GSSOC, etc). (Suppose two working guys made different changes in the same line). You can see the error messages as "pull request failed". The best way to solve merge conflict is to pull the current master branch of the main author's repository into a separate branch(one can name as "conflict" branch) using git pull. Then use VSCode text editor(works best in this case) and make the changes locally accordingly as you want. After resolving, commit them, push and make a pull request again from the branch created to merge the conflict(In this case the conflict branch).
 
 **gh-pages** - You can create a branch named ``gh-pages`` which can help you act as a mini deployment server for your Web Apps. This makes a URL under your repository that enlists all the files under the branch gh-pages like a simple web server.  
