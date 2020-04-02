@@ -1,10 +1,13 @@
 # Getting Started with GitHub & This Repository
 
 ## Contents
-- [Installing Git and Linking your GitHub Account](#Installing-Git-and-Linking-your-GitHub-Account)
-- [Cloning this Repository](#Cloning-this-Repository)
-- [Important Git Commands](#Important-Git-Commands)
-- [Some Additional Terms](#Some-Additional-Terms)
+- [Downloadind and Installing latest version of Git](https://git-scm.com/downloads)
+- [Setting your username in Git](https://help.github.com/en/github/using-git/setting-your-username-in-git)
+- [Setting your commit email address](https://bit.ly/39CUyem)
+- [Creating a repository](https://help.github.com/en/github/getting-started-with-github/create-a-repo)
+- [Forking and Cloning this Repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Important Git Commands](https://dev.to/dhruv/essential-git-commands-every-developer-should-know-2fl)
+- [Some Additional Terms](https://dzone.com/articles/top-20-git-commands-with-examples)
 
 ## Installing Git and Linking your GitHub Account
 1. You can download [Git](https://git-scm.com/downloads) or use [GitHub Desktop](https://desktop.github.com/). The later has a simple interface to get started with for beginners.  
